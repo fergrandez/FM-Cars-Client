@@ -1,0 +1,37 @@
+.superContainer {
+    width: 40%;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.contactHeader {
+    font-size: 22px;
+    padding: 20px 0;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    height: 82%;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.submitBtn {
+    align-self: center;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: gold;
+    font-size: 14px;
+}
+
+.hide {
+    display: none;
+}

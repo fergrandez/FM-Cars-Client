@@ -1,0 +1,37 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.filter .heading {
+    background-color: whitesmoke;
+    display: flex;
+    padding: 17px 10px;
+    font-size: 20px;
+}
+
+.filter .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter .category {
+    border-bottom: 1px solid darkgrey;
+    padding: 12px 10px;
+    cursor: pointer;
+}
+
+.filter .category:hover {
+    color: darkslategray;
+}
+
+.filter .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter .icon {
+    width: 25px;
+}

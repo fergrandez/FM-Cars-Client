@@ -1,0 +1,7 @@
+.drop {
+    display: flex;
+    margin-top: 6px;
+    flex-direction: column;
+    align-items: start;
+    min-height: fit-content;
+}

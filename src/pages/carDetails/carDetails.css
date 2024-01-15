@@ -1,0 +1,87 @@
+.carImage {
+    max-width: 70%;
+    margin: 50px 0;
+}
+
+
+
+
+.carDetailsHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.carYMM .sub {
+    font-size: 18px; 
+}
+
+.carYMM .main {
+    font-size: 40px; 
+}
+
+.carPrice {
+    font-size: 20px; 
+}
+
+.vehicleInfo {
+    display: flex;
+    justify-content: center;
+}
+
+.col1, .col2 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 30px 40px;
+}
+
+.carProp {
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+}
+
+.inlineInfo {
+    color: black;
+}
+
+
+
+
+.featuresRow {
+    margin: 50px 0px;
+}
+
+.featuresContainer {
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+.featuresList {
+    margin-top: 20px;
+}
+
+.featuresHeader {
+    font-size: 21px; 
+}
+
+
+
+
+.suggestedRow {
+    margin: 140px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suggestedContainer {
+    max-width: 75%;
+}
+
+.recommendedHeader {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+

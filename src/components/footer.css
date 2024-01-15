@@ -1,0 +1,93 @@
+.footer {
+    background-color: whitesmoke;
+}
+
+.footer .top {
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 0.5px darkgrey;
+}
+
+.footer .top .title {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.footer .location {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: gold;
+    margin-right: 10px;
+}
+
+.footer .col .content {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footerHours {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+.footer .facebookContainer, .footer .instaContainer {
+    background-color: gold;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer .instaContainer {
+    margin-left: 20px;
+}
+
+.footer .facebookContainer img, .footer .instaContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer .contactContent {
+    display: flex;
+    font-size: 14px;
+}
+
+.footer .phoneContainer {
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: gold;
+    margin-right: 10px;
+}
+
+.footer .phoneContainer img {
+    width: 100%;
+}
+
+.footer .middle {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px 0;
+    border-bottom: solid 0.5px darkgrey;
+}
+
+.footer .middle div {
+    cursor: pointer;
+}
+
+.footer .bottom {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    font-size: 14px;
+}

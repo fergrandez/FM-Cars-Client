@@ -1,0 +1,38 @@
+.centerEverything {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dateTimeHeader {
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+.timeSlots {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 10px;
+}
+
+.timeOption {
+    background-color: white;
+    border: solid 1px lightgrey;
+    border-radius: 10px;
+    margin: 0 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.timeOption:hover {
+    background-color: rgb(238 242 255);
+}
+
+.timeOption:focus {
+    background: #4f46e5;
+    color: white;
+}
+
+.appointmentInfo {
+    margin-top: 20px;
+}

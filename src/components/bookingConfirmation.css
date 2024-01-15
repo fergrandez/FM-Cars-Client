@@ -1,0 +1,31 @@
+.thankYou {
+    font-size: 22px;
+    margin: 10px 0 30px;
+}
+
+.confirmationImg {
+    margin-bottom: 25px;
+}
+
+.confirmationImg img {
+    width: 200px;
+}
+
+.navContainer {
+    margin: 45px 0 20px;
+}
+
+.navContainer button {
+    border: none;
+    margin: 0 6px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.navContainer button:hover {
+    background-color: gold;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}

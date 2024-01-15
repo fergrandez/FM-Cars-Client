@@ -1,0 +1,36 @@
+.appointmentInfoHeader {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.bookingDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailsSectionContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.detailsSectionSubtitle {
+    text-align: left;
+    font-size: 20px;
+}
+
+.detailsSectionContainer input{
+    margin-top: 10px;
+}
+
+.rada {
+    padding: 10px 10px 25px;
+    margin: 10px 0 20px;
+}
+
+.err-msg {
+    color: red;
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0 0;
+}
