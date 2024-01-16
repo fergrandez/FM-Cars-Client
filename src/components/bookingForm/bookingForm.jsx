@@ -53,7 +53,7 @@ export const BookingForm = () => {
 
     const confirmAppointment = () => {
         if (isFormValid()) {
-            axios.post('http://localhost:3001/appointment', formData).then(() => {
+            axios.post('https://fm-cars-mern-app-94ba32793065.herokuapp.com/appointment', formData).then(() => {
                 const emailTemplate = (({ dateTime, ...obj}) => obj)(formData)
                 emailTemplate.date = format(formData.dateTime.date, 'PPPP')
                 emailTemplate.time = format(formData.dateTime.time, 'h:mm a')

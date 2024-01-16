@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import dropdown from '../assets/drop-down.png';
+import dropdown from '../../assets/drop-down.png';
 import { Options } from './options';
 import './filter.css';
 
@@ -8,7 +8,7 @@ export const Filter = (props) => {
     const [categories, setCategories] = useState({})
 
     useEffect(() => {
-        axios.get('http://localhost:3001/cars/test').then(response => {
+        axios.get('https://fm-cars-mern-app-94ba32793065.herokuapp.com/cars/columns').then(response => {
             setCategories(response.data)
         })
     }, []) 
@@ -46,7 +46,7 @@ export const Filter = (props) => {
                 </div>
 
                 {Object.keys(categories).map((category) => (
-                    <div className='category'>
+                    <div className='category' key={`filter-${category}`}>
                         <div className='info' onClick={ () => handleClick(category) }>
                             {category.includes('Miles') ? (
                                 <div>{category.substring(0, category.length - 5).concat(' ', category.substring(category.length - 5)).toLowerCase()}</div>

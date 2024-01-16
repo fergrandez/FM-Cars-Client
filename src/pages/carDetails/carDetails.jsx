@@ -1,24 +1,23 @@
 import './carDetails.css'
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { useNavigate, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { ContactForm } from '../../components/contactForm/contactForm'
-import { Cards } from '../../components/cards'
+import { Cards } from '../../components/cards/cards'
 
 export const CarDetails = () => {
     const { id } = useParams()
     const [car, setCar] = useState({})
     const [suggestedCars, setSuggestedCars] = useState([])
-    const navigate = useNavigate()
 
     useEffect(() => {
         window.scrollTo(0, 0)
 
-        axios.get(`http://localhost:3001/cars/id/${id}`).then((response) => {
+        axios.get(`https://fm-cars-mern-app-94ba32793065.herokuapp.com/cars/id/${id}`).then((response) => {
             setCar(response.data)
         })
 
-        axios.get('http://localhost:3001/cars/random').then((response) => {
+        axios.get('https://fm-cars-mern-app-94ba32793065.herokuapp.com/cars/random').then((response) => {
             setSuggestedCars(response.data)
         })
     }, [id])

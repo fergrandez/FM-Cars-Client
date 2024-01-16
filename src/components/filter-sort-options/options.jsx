@@ -9,7 +9,7 @@ export const Options = (props) => {
 
     const [options, setOptions] = useState([])
     useEffect(() => {
-        axios.get(`http://localhost:3001/cars/unique/${props.category}`).then(response => {
+        axios.get(`https://fm-cars-mern-app-94ba32793065.herokuapp.com/cars/unique/${props.category}`).then(response => {
             setOptions(response.data)
         })
     }, [])
@@ -28,7 +28,7 @@ export const Options = (props) => {
         <div className='drop'>
             {props.type === 'STRING' ? (
                 options.map((option) => (
-                    <div onClick={() => updateSearchParams(props.category, option)}>
+                    <div onClick={() => updateSearchParams(props.category, option)} key={`option-${option}`}>
                         <input type='checkbox' checked={searchParams.has(props.category, option)} />
                         <label>{option}</label>
                     </div>

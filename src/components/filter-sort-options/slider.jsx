@@ -23,7 +23,7 @@ export const RangeSlider = (props) => {
     const [upperBound, setUpperBound] = useState(null)
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/cars/minMax/${props.prop}`).then((response) => {
+        axios.get(`https://fm-cars-mern-app-94ba32793065.herokuapp.com/cars/minMax/${props.prop}`).then((response) => {
             const { min, max } = response.data
             setUpperBound(max)
             setMin(min)

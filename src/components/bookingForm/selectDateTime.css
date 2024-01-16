@@ -11,6 +11,7 @@
 
 .timeSlots {
     display: flex;
+    max-width: 100%;
     justify-content: center;
     margin: 40px 0 10px;
 }
@@ -35,4 +36,18 @@
 
 .appointmentInfo {
     margin-top: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .timeSlots {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .timeOption {
+        font-size: 11px;
+    }
 }

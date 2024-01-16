@@ -47,7 +47,7 @@ export const CarFinder = () => {
                         </div>
                     </div>
 
-                    <div className='formSection'>
+                    <div className='formConsent'>
                         By clicking "Submit", I consent to be contacted by the dealer at any telephone number or email I provide, including, without limitation, communications sent via text message to my cell phone or communications sent using an autodialer or prerecorded message.
                         This acknowledgment constitutes my written consent to receive such communications. I have read and agree to the Privacy Policy of this dealer.
                     </div>

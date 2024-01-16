@@ -8,7 +8,7 @@ export const Cards = (props) => {
         <div className='cards'>
             {props.listOfCars.map((val, key) => {
                 return (
-                    <div className='card'>
+                    <div className='card' key={`car-${val.id}`}>
                         <div className='imageContainer'>
                             <img src={val.imagePath} loading='lazy' />
 

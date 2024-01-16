@@ -91,3 +91,31 @@
     color: black;
 }
 
+@media screen and (max-width: 540px) {
+    .navbar {
+        font-size: 13px;
+    }
+
+    .right {
+        flex: 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .navbar {
+        font-size: 11px;
+        height: 70px;
+    }
+
+    .more .container img {
+        width: 12px;
+    }
+    
+    .right {
+        flex: 0;
+    }
+
+    .right a {
+        width: 70px;
+    }
+}

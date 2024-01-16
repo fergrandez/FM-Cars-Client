@@ -2,7 +2,7 @@ import './home.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
-import { Cards } from '../../components/cards';
+import { Cards } from '../../components/cards/cards';
 import lease from '../../assets/lease.webp';
 import sell from '../../assets/sell.avif';
 import service from '../../assets/service.jpeg';
@@ -14,11 +14,10 @@ export const Home = () => {
     const [listOfCars, setListOfCars] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/cars/newArrivals').then((response) => {
+        axios.get('https://fm-cars-mern-app-94ba32793065.herokuapp.com/cars/newArrivals').then((response) => {
             setListOfCars(response.data)
         })
     }, [])
-
     
     return (
         <div>
@@ -88,7 +87,6 @@ export const Home = () => {
                             </button>
                         </div>
                     </div>
-                    
                 </div>
             </div>
 

@@ -1,5 +1,5 @@
 import './bookingConfirmation.css'
-import confirmation from '../assets/confirmation.png'
+import confirmation from '../../assets/confirmation.png'
 import { useNavigate } from 'react-router-dom'
 
 export const BookingConfirmation = () => {

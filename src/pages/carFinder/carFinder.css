@@ -55,7 +55,7 @@ input, textarea {
     padding: 5px 0 5px 5px;
 }
 
-.formSection {
+.formSection, .formConsent {
     margin-bottom: 35px;
 }
 
@@ -66,4 +66,15 @@ input, textarea {
     font-size: 16px;
     background-color: gold;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 430px) {
+    .carFinderForm {
+        width: 100%;
+    }
+
+    .formConsent {
+        font-size: 14px;
+    }
 }

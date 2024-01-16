@@ -1,10 +1,10 @@
 import './bookings.css'
-import { BookingForm } from "../../components/bookingForm"
+import { BookingForm } from "../../components/bookingForm/bookingForm"
 
 export const Bookings = () => {
     return (
         <div>
-            <h1>Book an Appointment</h1>
+            <h1 className='bookTitle'>Book an Appointment</h1>
 
             <div className='bookingFormContainer'>
                 <BookingForm />

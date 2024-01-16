@@ -1,6 +1,6 @@
 import './navbar.css';
-import logo from '../assets/car-logo.png';
-import dropdown from '../assets/drop-down.png';
+import logo from '../../assets/car-logo.png';
+import dropdown from '../../assets/drop-down.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -42,18 +42,18 @@ export const Navbar = () => {
                     {isDropdownVisible && (
                         <div className='dropdown'>
                             <div className='option'>
-                                <Link to='/'>
-                                    Option #1
+                                <Link to='/carFinder'>
+                                    Car Finder
                                 </Link>
                             </div>
                             <div className='option'>
-                                <Link to='/'>
-                                    Option #2
+                                <Link to='/booking'>
+                                    Schedule Service
                                 </Link>
                             </div>
                             <div className='option'>
-                                <Link to='/'>
-                                    Option #3
+                                <Link to='/sellCar'>
+                                    Sell Your Car
                                 </Link>
                             </div>
                         </div>

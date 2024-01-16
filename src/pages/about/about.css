@@ -152,3 +152,76 @@
 .hoursSection .day, .hoursSection .time {
     margin-bottom: 8px;
 }
+
+@media screen and (max-width: 1150px) {
+    .aboutSection {
+        background-color: green;
+        min-width: 95%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .aboutSection {
+        display: block;
+        min-width: 95%;
+        margin-bottom: 80px;
+    }
+
+    .aboutImageContainer {
+        display: none;
+    }
+
+    .testimonialsSection {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .aboutSubtitle {
+        font-size: 14px;
+    }
+
+    .aboutSection {
+        display: block;
+        min-width: 95%;
+        margin-bottom: 80px;
+    }
+
+    .aboutImageContainer {
+        display: none;
+    }
+
+    .testimonialsSection {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial {
+        margin: 0 0 30px;
+    }
+
+    .contactSection {
+        flex-direction: column;
+    }
+
+    .contactSection div {
+        width: 95%;
+    }
+
+    .contactSection div button {
+        margin-top: 20px;
+    }
+
+    .contactInfoContainer {
+        padding: 0;
+        margin-top: 70px;
+    }
+
+    .contactContainer {
+        margin-bottom: 30px;
+    }
+}

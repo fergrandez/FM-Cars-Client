@@ -1,4 +1,4 @@
-import '../styles/calendar.css'
+import '../../styles/calendar.css'
 import './selectDateTime.css'
 import axios from 'axios'
 import ReactCalendar from 'react-calendar'
@@ -15,7 +15,7 @@ export const SelectDateTime = ({ formData, setFormData }) => {
     const [times, setTimes] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/appointment', {
+        axios.get('https://fm-cars-mern-app-94ba32793065.herokuapp.com/appointment', {
             params: {
                 date: formData.dateTime.date
             }
